@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>WYN Traffic Alert cần vị trí để cảnh báo giao thông.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>WYN Traffic Alert cần vị trí dưới nền để cảnh báo liên tục.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>WYN Traffic Alert cần vị trí dưới nền để cảnh báo liên tục.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>audio</string>
+	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
