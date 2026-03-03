@@ -1,0 +1,48 @@
+name: traffic_alert
+description: WYN Traffic Alert - Cross-platform traffic alert app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Location
+  geolocator: ^13.0.2
+
+  # Audio
+  audioplayers: ^6.1.0
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+
+  # Background service
+  flutter_foreground_task: ^8.11.0
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Settings persistence
+  shared_preferences: ^2.3.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.14
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/audio/speed/
+    - assets/audio/slowdown/
+    - assets/
