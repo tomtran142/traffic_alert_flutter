@@ -17,7 +17,7 @@ class LocationTracker {
         distanceFilter: 0,
         intervalDuration: Duration(milliseconds: intervalMs),
         foregroundNotificationConfig: const ForegroundNotificationConfig(
-          notificationTitle: 'WYN Traffic Alert',
+          notificationTitle: 'VETC Giao Thông',
           notificationText: 'Đang theo dõi vị trí...',
           enableWakeLock: true,
         ),

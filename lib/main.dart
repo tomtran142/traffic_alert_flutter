@@ -22,7 +22,7 @@ class TrafficAlertApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-    title: 'WYN Traffic Alert',
+    title: 'VETC Giao Thông',
     theme: AppTheme.theme,
     home: const HomePage(),
     debugShowCheckedModeBanner: false,

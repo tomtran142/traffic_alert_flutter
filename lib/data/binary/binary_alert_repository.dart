@@ -6,7 +6,7 @@ import '../../domain/model/models.dart';
 import '../../domain/repository/alert_repository.dart';
 
 class BinaryAlertRepository implements AlertRepository {
-  static const _assetName = 'assets/cameras_all.wyn';
+  static const _assetName = 'assets/data.vetc';
   static const _headerSize = 8;
   static const _recordSize = 16;
 
