@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:geolocator/geolocator.dart';
@@ -47,7 +48,11 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
   }
 
   Future<void> _requestPermissions() async {
-    await [Permission.location, Permission.locationAlways, Permission.notification].request();
+    if (kIsWeb) {
+      await [Permission.location].request();
+    } else {
+      await [Permission.location, Permission.locationAlways, Permission.notification].request();
+    }
     _startMonitoring();
   }
 
