@@ -48,6 +48,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
 
   Future<void> _requestPermissions() async {
     await [Permission.location, Permission.locationAlways, Permission.notification].request();
+    _startMonitoring();
   }
 
   void _startMonitoring() {
