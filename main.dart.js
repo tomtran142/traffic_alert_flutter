@@ -72130,7 +72130,7 @@ s=p}for(;;)switch(s){case 0:if(n.d){s=1
 break}n.d=!0
 p=4
 s=7
-return A.z($.to().ef("assets/cameras_all.wyn"),$async$wa)
+return A.z($.to().ef("assets/data.vetc"),$async$wa)
 case 7:m=b
 l=J.av2(m,0,!0)
 if(J.d(l,21911895)){k=J.Rr(m,4,!0)
@@ -72514,7 +72514,7 @@ H(){return"SpokenState."+this.b}}
 A.yz.prototype={}
 A.jK.prototype={}
 A.J6.prototype={
-P(a){return new A.vW(B.Bs,"WYN Traffic Alert",A.ajK(null,A.amd(B.a1,B.b2,null,B.ay,B.ay,B.j),B.Ac,!0),!1,null)}}
+P(a){return new A.vW(B.Bs,"VETC Giao Th\xf4ng",A.ajK(null,A.amd(B.a1,B.b2,null,B.ay,B.ay,B.j),B.Ac,!0),!1,null)}}
 A.vh.prototype={
 au(){return new A.zu(null,null)}}
 A.zu.prototype={
