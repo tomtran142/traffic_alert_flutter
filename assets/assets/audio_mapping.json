@@ -1,0 +1,34 @@
+{
+  "alertTypeToAudioKey": {
+    "SPEED_CAMERA": "speed_camera",
+    "SPEED_SIGN": "speed_sign",
+    "TRAFFIC_LIGHT": "traffic_light",
+    "NO_OVERTAKING_START": "no_overtaking_start",
+    "NO_OVERTAKING_END": "no_overtaking_end",
+    "RESIDENTIAL_AREA_START": "residential_area_start",
+    "RESIDENTIAL_AREA_END": "residential_area_end",
+    "REST_AREA": "rest_area",
+    "NO_PARKING": "no_parking",
+    "NO_ENTRY": "no_entry",
+    "NO_TURN": "no_turn",
+    "NO_U_TURN": "no_u_turn",
+    "INFO_SIGN": "info_sign",
+    "UNKNOWN": "generic_alert"
+  },
+  "audioKeyToAsset": {
+    "speed_camera": "audio/speed_camera.mp3",
+    "speed_sign": "audio/camera.mp3",
+    "traffic_light": "audio/chuydentinhieugiaothong.mp3",
+    "no_overtaking_start": "audio/camvuot.mp3",
+    "no_overtaking_end": "audio/hetcamvuot.mp3",
+    "residential_area_start": "audio/batdaukhudancu.mp3",
+    "residential_area_end": "audio/hetkhudongdancu.mp3",
+    "rest_area": "audio/tramdungchan.mp3",
+    "no_parking": "audio/generic_alert.mp3",
+    "no_entry": "audio/generic_alert.mp3",
+    "no_turn": "audio/generic_alert.mp3",
+    "no_u_turn": "audio/generic_alert.mp3",
+    "info_sign": "audio/generic_alert.mp3",
+    "generic_alert": "audio/generic_alert.mp3"
+  }
+}
