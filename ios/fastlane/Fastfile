@@ -12,6 +12,14 @@ platform :ios do
       git_basic_authorization: Base64.strict_encode64(ENV["MATCH_GIT_AUTH"])
     )
 
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      team_id: ENV["TEAM_ID"],
+      bundle_identifier: "com.wyn.trafficAlert",
+      profile_name: ENV["sigh_com.wyn.trafficAlert_appstore_profile-name"],
+      code_sign_identity: "iPhone Distribution"
+    )
+
     build_app(
       workspace: "Runner.xcworkspace",
       scheme: "Runner",
