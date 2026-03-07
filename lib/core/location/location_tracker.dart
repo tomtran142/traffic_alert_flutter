@@ -1,3 +1,4 @@
+import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:geolocator/geolocator.dart';
 
@@ -8,6 +9,17 @@ class LocationTracker {
         locationSettings: const LocationSettings(
           accuracy: LocationAccuracy.high,
           distanceFilter: 0,
+        ),
+      );
+    }
+    if (Platform.isIOS || Platform.isMacOS) {
+      return Geolocator.getPositionStream(
+        locationSettings: const AppleSettings(
+          accuracy: LocationAccuracy.high,
+          distanceFilter: 0,
+          activityType: ActivityType.automotiveNavigation,
+          allowBackgroundLocationUpdates: true,
+          showBackgroundLocationIndicator: true,
         ),
       );
     }

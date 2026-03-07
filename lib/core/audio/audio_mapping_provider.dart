@@ -52,7 +52,7 @@ class AudioMappingProvider {
   }
 
   String? _findBestMatch(AlertType type) => switch (type) {
-    AlertType.speedCamera => 'batdaughihinh',
+    AlertType.speedCamera => 'camera',
     AlertType.speedSign => 'sapdenbienbao',
     AlertType.trafficLight => 'chuydentinhieugiaothong',
     AlertType.noOvertakingStart => 'camvuot',
