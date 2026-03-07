@@ -18,8 +18,17 @@ jobs:
 
       - run: flutter pub get
 
+      - name: Disable code signing for CI
+        run: |
+          cd ios
+          sed -i '' 's/CODE_SIGN_STYLE = Automatic/CODE_SIGN_STYLE = Manual/g' Runner.xcodeproj/project.pbxproj
+          sed -i '' 's/"CODE_SIGN_IDENTITY\[sdk=iphoneos\*\]" = "iPhone Developer"/"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = ""/g' Runner.xcodeproj/project.pbxproj
+
       - name: Build iOS (no codesign)
-        run: flutter build ios --release --no-codesign --verbose 2>&1 | tail -200
+        run: >
+          flutter build ios --release --no-codesign
+          --dart-define=FLUTTER_BUILD_NAME=1.0.0
+          --dart-define=FLUTTER_BUILD_NUMBER=1
 
       - uses: actions/upload-artifact@v4
         with:
